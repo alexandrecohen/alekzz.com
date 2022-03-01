@@ -1,0 +1,372 @@
+	/*	font-family: 'Hind Vadodara', sans-serif;
+	/*font-family: 'Righteous', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+
+/*CSS - CSS - CSS- CSS- CSS- CSS- CSS- CSS- CSS- CSS- CSS*/
+/*CSS - CSS - CSS- CSS- CSS- CSS- CSS- CSS- CSS- CSS- CSS*/
+/*CSS - CSS - CSS- CSS- CSS- CSS- CSS- CSS- CSS- CSS- CSS*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+h1.alekzenhaut{
+	background-color: white;
+	padding-top: 20px;
+	font-family: 'Righteous', cursive;
+	padding-bottom: 20px;
+	transition: 0.1s;
+	animation: halekzenhaut 0.5s linear;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+header{
+	display: flex;
+	background-color: #115801;
+	justify-content: space-around;
+	padding: 1.6rem 0;
+	align-items: center;
+  	text-transform: uppercase;
+	box-shadow: 0px 3px 6px black;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	width: 50px;
+	border-radius: 50px:
+	margin-right :10px ;
+}
+
+.header_logo{
+	 color: white;
+	 font-weight: 600;
+}
+
+.nav_list{
+	display: flex;
+	align-items: center;
+}
+
+.nav_item{
+	margin: 0 8px;
+	animation: barredenav 1s linear;
+}
+
+#activepage{
+	
+}
+
+.nav_link{
+	padding: 10px;
+	color: white;
+	font-size: 1rem;
+	font-weight: 500;
+	border-radius: 5px;
+	transition: 0.3s;
+	font-weight: bold;
+}
+
+.nav_link:hover{
+	background-color: green;
+	color:white;
+}
+
+.header_toggle,
+.header_close{
+	display: none;
+}
+
+@media screen and (max-width: 768px){
+	header{
+		height: 48px;
+		justify-content: space-between;
+		padding: 0 28px;
+	}
+
+	.logo a{
+		font-size: 0.9rem;
+	}
+	.logo img{
+		width: 30px;
+	}
+	.header_toggle{
+		display: inline;
+		color: white;
+		font-size: 30px;
+		transition: 0.3s;
+	}
+	.header_toggle:hover{
+		font-size: 36px;
+	}
+	.header_close{
+		position: absolute;
+		color: black;
+		right: 24px;
+		display: block;
+		font-size: 34px;
+		border-radius: 50%;
+		transition: 0.2s;
+	}
+	.header_close:hover{
+		background-color: green;
+		color: white;
+		font-size: 40px;
+	}
+	.nav{
+		position: fixed;
+		top:0;
+		right: -100%;
+		background-color: #fff;
+		box-shadow: -5px 0px 10px black;
+		color: #ffffff;
+		width: 60%;
+		height: 100%;
+		padding: 24px 0;
+		z-index: 100;
+		transition: 0.5s;
+	}
+	.nav_list{
+		display: flex;
+		flex-direction: column;
+	}
+	.nav_item{
+		margin: 2rem 0;
+	}
+	.show{
+		right: 0;
+	}
+	.nav_link{
+		color:black;
+		transition: 0.1s;
+	}
+	.nav_link:hover{
+		font-size: 1.1rem;
+	}
+	.nav_link:focus{
+		font-size: 0.9rem;
+	}
+}
+
+.imagecenter{
+	width: 1000px;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+
+/*FOOTER - FOOTER - FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -*/
+/*FOOTER - FOOTER - FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -*/
+/*FOOTER - FOOTER - FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -*/
+
+
+footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    height: auto;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    transition: 0.2s;
+	animation: barredenav 1s linear;
+}
+
+.footer-bottom p:hover{
+	color: #939393;
+	cursor: default;
+}
+
+/*FOOTER - FOOTER - FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -*/
+/*FOOTER - FOOTER - FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -*/
+/*FOOTER - FOOTER - FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -FOOTER -*/
+
+/*ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - */
+/*ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - */
+/*ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - */
+
+
+@keyframes halekzenhaut{
+	0%{
+		opacity: 0;
+	}
+
+	70%{
+		opacity: 0;	
+	}
+
+	100%{
+		opacity: 100%;
+	}
+}
+
+@keyframes barredenav{
+	0%{
+		opacity: 0;
+	}
+
+	80%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 100%;
+	}
+}
+
+/*qzdiqdimqidjqjdiqijdqjmdqijdmqjzd*/
+
+.wrapper{
+	display: inline;
+	animation: halekzenhaut 2s linear;
+
+}
+.wrapper .static-txt{
+  color: black;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+
+
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li{
+  list-style: none;
+  color: green;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 2px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-left: 3px solid green;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 90%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+/*INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -*/
+/*INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -*/
+/*INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -INFOS -*/
+
+#infos .containerinfos{
+	animation: halekzenhaut 2s linear;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	max-width: 2500px;
+	margin: 0;
+	padding: 100px 0;
+	flex-wrap: wrap;
+	padding: 100px 20px;
+}
+
+#infos .containerinfos .bloc{
+	text-align: center;
+	cursor: pointer;
+	margin: 30px 10px 0px 10px;
+	width: 300px;
+	flex-direction: column;
+	height: 350px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s;
+	background: linear-gradient(
+		45deg, #0d6600 , #008a06);
+
+}
+
+#infos .containerinfos .bloc:hover{
+	transform: translateY(-10px);
+	box-shadow: 0px 65px 90px -55px #565656;
+}
+
+#infos .containerinfos .bloc ion-icon{
+	font-size: 3em;
+	color: white;
+}
+
+#infos .containerinfos .bloc h1{
+	font-size: 1.5em;
+	margin-top: 12px;
+	color: #1D1D1D;
+	margin: 30px 0 15 0;
+	color: white;
+}
+
+#infos .containerinfos .bloc p{
+	/*font-size: 1.5em;*/
+	color: white;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-align: justify;
+	text-justify: inter-word
+}
+
