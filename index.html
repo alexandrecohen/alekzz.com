@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloud sécurisé</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&family=Righteous&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+	
+	<div class="container">
+	  <form >
+	    <p><font size="10pt">Log in</font></p>
+	    <input type="email" placeholder="Identifiant"><br>
+	    <input type="password" class="motdepasse" placeholder="Mot de passe">
+	    <br><a href="fichers.html"><input type="button" value="Connexion"></a>
+		<span id="message">
+		    <i data-feather="alert-triangle"></i>
+		    Touche majuscule activée
+		</span>
+ 		<script src="https://unpkg.com/feather-icons">  </script>
+		<script>feather.replace();</script>
+
+		<script type="text/javascript">
+			const capsMessage = document.querySelector('#message');
+
+			window.addEventListener('keyup', event => {
+			    if (event.getModifierState('CapsLock')) {
+			        capsMessage.style.display = 'flex';
+			    } else {
+			        capsMessage.style.display = 'none';
+			    }
+			});
+		</script>
+
+	  </form>
+
+
+
+	</div>
+
+</body>
+</html>
